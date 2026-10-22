@@ -5,13 +5,13 @@
 class Breakthrough < Formula
   desc "POSIX-friendly, window/menu-based TUI file manager for the terminal, inspired by the Windows 3.11 UX."
   homepage "https://github.com/jagottsicher/breakthrough"
-  version "0.87.12"
+  version "0.87.13"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/jagottsicher/breakthrough/releases/download/v0.87.12/breakthrough_0.87.12_darwin_amd64.tar.gz"
-      sha256 "b5d6edd7b10b624265d5c78fcf89f3b0c211c911e0fef5c69204d0988b861590"
+      url "https://github.com/jagottsicher/breakthrough/releases/download/v0.87.13/breakthrough_0.87.13_darwin_amd64.tar.gz"
+      sha256 "c90e0e17a6570d0c5d651eb645ecffc92c594c51c2f9851f289cd02e86a4c3e2"
 
       define_method(:install) do
         bin.install "breakthrough"
@@ -21,8 +21,8 @@ class Breakthrough < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/jagottsicher/breakthrough/releases/download/v0.87.12/breakthrough_0.87.12_darwin_arm64.tar.gz"
-      sha256 "b5e15eb196b358fb8606023050a163058db4e1308817641a5e29853beb5f0a38"
+      url "https://github.com/jagottsicher/breakthrough/releases/download/v0.87.13/breakthrough_0.87.13_darwin_arm64.tar.gz"
+      sha256 "f2dadcc692c51802661f6cc4a6ab1e4af63319f47878bb3469af707f2ecdcfbb"
 
       define_method(:install) do
         bin.install "breakthrough"
@@ -35,8 +35,8 @@ class Breakthrough < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jagottsicher/breakthrough/releases/download/v0.87.12/breakthrough_0.87.12_linux_amd64.tar.gz"
-      sha256 "26a230108f9d35027bced1c818cba3e31d5a6b013546e385e7a9b5605f3145fd"
+      url "https://github.com/jagottsicher/breakthrough/releases/download/v0.87.13/breakthrough_0.87.13_linux_amd64.tar.gz"
+      sha256 "d6073fde8bf429dd7b70696bf176327a8221ff1863f0b1408c669e2c7fc7b7a4"
       define_method(:install) do
         bin.install "breakthrough"
         bin.install_symlink bin/"breakthrough" => "brk"
@@ -45,8 +45,8 @@ class Breakthrough < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jagottsicher/breakthrough/releases/download/v0.87.12/breakthrough_0.87.12_linux_arm64.tar.gz"
-      sha256 "32e20957797afc26ab1723100a7ce6189e7afd8635a3e2305973f96dfe0030dc"
+      url "https://github.com/jagottsicher/breakthrough/releases/download/v0.87.13/breakthrough_0.87.13_linux_arm64.tar.gz"
+      sha256 "7d31bc942ed506d8a03575dc117d5e3f7fc97f0cd9061c47449b4e03e9ad20ef"
       define_method(:install) do
         bin.install "breakthrough"
         bin.install_symlink bin/"breakthrough" => "brk"
